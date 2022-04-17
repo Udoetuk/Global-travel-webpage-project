@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('https://www.arikair.com/assets/images/slide18.jpg');
+    font-family: 'Muli', sans-serif;
+
+}
+.navigation {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: blue;
+    margin-top: 0;
+    
+
+}
+.logo {
+    height: 50px;
+    width: 100%;
+    
+
+}
+
+
+.service {
+    display: inline-block;
+    position: absolute;
+
+}
+#serv1 {
+    left: 0;
+}
+#serv2 {
+    left: 100px;
+}
+#serv3 {
+    right: 200px;
+}
+#serv4 {
+    right: 0;
+
+}
+
+.firstsection {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+    background-color: transparent;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  border-radius: 80px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  left: 40px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
